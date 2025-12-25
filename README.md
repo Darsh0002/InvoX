@@ -1,52 +1,37 @@
-# InvoX | Full-Stack Invoice Management System
+# 📑 InvoX - Invoice Management System
 
-InvoX is a professional invoice generation and management platform designed to streamline billing workflows. It allows users to create, manage, and track invoices with automated tax calculations and professional PDF exports.
+**InvoX** is a professional-grade invoice generation and management platform. It features a robust **Spring Boot** backend and a dynamic **React.js** frontend, providing a seamless experience for creating, managing, and emailing business invoices.
 
-**[🔗 View Live Demo]([INSERT_LINK_HERE])** | **[🔗 Backend Repository]([INSERT_LINK_HERE])**
+### 🔗 [Click Here For Live Demo](https://invox-invoice-generator.vercel.app)
 
 ---
 
 ## 🚀 Key Features
 
-* **Dynamic Invoice Builder:** Real-time subtotal, tax, and discount calculations.
-* **PDF Generation:** One-click export of professional, print-ready invoices.
-* **Dashboard Analytics:** Visual tracking of total revenue and pending payments.
-* **Client Management:** Integrated directory to manage client contact details and history.
-* **Secure Authentication:** User registration and login powered by JWT (JSON Web Tokens).
-* **Responsive Design:** Fully optimized for mobile, tablet, and desktop views.
+* **Secure Auth:** Integrated **Clerk JWT** authentication for secure user management.
+* **Automated Mailing:** Instant invoice delivery via **Sendinblue (Brevo)** SMTP.
+* **Dynamic PDFs:** Real-time generation of professional invoices.
+* **Database:** Persistent storage using **MongoDB** for flexible invoice schemas.
+* **Clean Architecture:** Built using the **Layered Architecture** pattern (Controller, Service, Repository).
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-* **Framework:** React.js
+### **Backend (Spring Boot)**
+* **Framework:** Spring Boot 3.x
+* **Security:** Spring Security & Clerk JWT Filtering
+* **Database:** MongoDB
+* **Communication:** Spring Mail (SMTP)
+* **Build Tool:** Maven
+
+
+
+### **Frontend (React)**
+* **Library:** React.js (Hooks & Context API)
 * **Styling:** Tailwind CSS
-* **Icons:** Lucide React
-* **State Management:** React Context API / Hooks
-
-### Backend
-* **Framework:** Spring Boot (Java)
-* **Security:** Spring Security & JWT
-* **Database:** PostgreSQL / MySQL (JPA/Hibernate)
-* **Documentation:** Swagger / OpenAPI
+* **Auth:** Clerk SDK
+* **HTTP Client:** Axios
 
 ---
 
-## 📸 Screenshots
-
-| Dashboard | Invoice Editor |
-| :--- | :--- |
-| ![Dashboard](https://via.placeholder.com/600x300?text=Dashboard+View) | ![Editor](https://via.placeholder.com/600x300?text=Invoice+Editor) |
-
----
-
-## ⚙️ Installation & Setup
-
-### 1. Backend Setup (Spring Boot)
-1. Navigate to the backend directory.
-2. Update `src/main/resources/application.properties` with your database credentials.
-3. Run the application:
-   ```bash
-   mvn clean install
-   mvn spring-boot:run
