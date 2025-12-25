@@ -31,6 +31,14 @@
 * **Auth:** Clerk SDK
 * **HTTP Client:** Axios
 
+---
+
+## 📁 Repository Status
+
+> [!IMPORTANT]  
+> The source code for both the **Frontend** and **Backend** of InvoX is currently hosted in **private repositories**. 
+
+If you are a recruiter or a developer interested in reviewing the codebase for evaluation purposes, please feel free to reach out to me via [LinkedIn/Email] to request access.
 
 ---
 ## Screenshots
